@@ -6,7 +6,11 @@
         {
             "label": "pylint",
             "type": "shell",
-            "command": "./venv/bin/pylint --rcfile ./.github/config/pylintrc mysite/mysite",
+            "command": [
+                "./venv/bin/pylint",
+                "--rcfile",
+                "./.github/config/pylintrc mysite/mysite"
+            ],
             "problemMatcher": [],
             "presentation": {
                 "reveal": "never"
