@@ -1,0 +1,10 @@
+[MAIN]
+
+# Files or directories to be skipped. They should be base names, not paths.
+ignore=manage.py
+
+
+[FORMAT]
+
+# Maximum number of characters on a single line.
+max-line-length=80

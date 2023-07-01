@@ -3,5 +3,9 @@
         "**/.git": false
     },
     "python.linting.enabled": true,
-    "python.linting.pylintEnabled": true
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintArgs": [
+        "--rcfile",
+        "./.github/config/pylintrc"
+    ]
 }
