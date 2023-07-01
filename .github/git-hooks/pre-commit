@@ -1,0 +1,6 @@
+#! /usr/bin/env zsh
+
+./venv/bin/pylint \
+    --rcfile ./.github/config/pylintrc \
+    --ignore=manage.py \
+    $(git ls-files '*.py')
