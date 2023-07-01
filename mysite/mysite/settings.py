@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-v*jfy2yl^o03r9-kv4v()phg#nvc8vkjx_70^3r!7^!@nim#ud'
+SECRET_KEY = 'django-insecure-v*jfy2yl^o03r9-kv4v()phg#nvc8vkjx_70^3r!7^!@nim#u'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -85,6 +85,7 @@ DATABASES = {
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
+    # pylint: disable=line-too-long
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
