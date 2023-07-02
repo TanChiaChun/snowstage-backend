@@ -8,3 +8,5 @@ set -e
     --rcfile ./.github/config/pylintrc \
     --ignore=manage.py \
     $(git ls-files '*.py')
+
+./venv/bin/mypy --config-file ./.github/config/mypy.ini mysite/mysite

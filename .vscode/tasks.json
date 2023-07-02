@@ -16,6 +16,20 @@
             "presentation": {
                 "reveal": "never"
             }
+        },
+        {
+            "label": "mypy",
+            "type": "shell",
+            "command": [
+                "./venv/bin/mypy",
+                "--config-file",
+                "./.github/config/mypy.ini",
+                "mysite/mysite"
+            ],
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "never"
+            }
         }
     ]
 }

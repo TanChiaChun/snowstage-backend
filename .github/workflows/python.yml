@@ -23,3 +23,6 @@ jobs:
 
       - name: Lint with Pylint
         run: pylint --rcfile ./.github/config/pylintrc mysite/mysite
+
+      - name: Check with Mypy
+        run: mypy --config-file ./.github/config/mypy.ini mysite/mysite
