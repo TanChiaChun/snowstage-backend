@@ -1,5 +1,9 @@
 #! /usr/bin/env zsh
 
+# Exit immediately if any command returns non-zero status
+# https://www.gnu.org/software/bash/manual/bash.html#The-Set-Builtin
+set -e
+
 ./venv/bin/pylint \
     --rcfile ./.github/config/pylintrc \
     --ignore=manage.py \
