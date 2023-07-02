@@ -9,7 +9,8 @@
             "command": [
                 "./venv/bin/pylint",
                 "--rcfile",
-                "./.github/config/pylintrc mysite/mysite"
+                "./.github/config/pylintrc",
+                "mysite/mysite"
             ],
             "problemMatcher": [],
             "presentation": {
