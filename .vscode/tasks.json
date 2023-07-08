@@ -60,6 +60,32 @@
             "presentation": {
                 "reveal": "never"
             }
+        },
+        {
+            "label": "isort",
+            "type": "shell",
+            "command": [
+                "./venv/bin/isort",
+                "--diff",
+                "--check-only",
+                "."
+            ],
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "never"
+            }
+        },
+        {
+            "label": "isort-write",
+            "type": "shell",
+            "command": [
+                "./venv/bin/isort",
+                "."
+            ],
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "never"
+            }
         }
     ]
 }
