@@ -4,6 +4,36 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "black",
+            "type": "shell",
+            "command": [
+                "./venv/bin/black",
+                "--check",
+                "--diff",
+                "--config",
+                "./.github/config/pyproject.toml",
+                "."
+            ],
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "never"
+            }
+        },
+        {
+            "label": "black-write",
+            "type": "shell",
+            "command": [
+                "./venv/bin/black",
+                "--config",
+                "./.github/config/pyproject.toml",
+                "."
+            ],
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "never"
+            }
+        },
+        {
             "label": "pylint",
             "type": "shell",
             "command": [

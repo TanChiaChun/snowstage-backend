@@ -21,6 +21,12 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements_dev.txt
 
+      - name: Lint with Black
+        uses: psf/black@stable
+        with:
+          options: '--check --diff --config ./.github/config/pyproject.toml'
+          src: '.'
+
       - name: Lint with Pylint
         run: pylint --rcfile ./.github/config/pylintrc mysite/mysite
 
