@@ -4,6 +4,22 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "unittest",
+            "type": "shell",
+            "command": [
+                "./venv/bin/python",
+                "-m",
+                "unittest",
+                "discover",
+                "--start-directory",
+                "./tests"
+            ],
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "never"
+            }
+        },
+        {
             "label": "black",
             "type": "shell",
             "command": [

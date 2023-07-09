@@ -4,6 +4,8 @@
 # https://www.gnu.org/software/bash/manual/bash.html#The-Set-Builtin
 set -e
 
+./venv/bin/python -m unittest discover --start-directory ./tests
+
 ./venv/bin/black --check --diff --config ./.github/config/pyproject.toml .
 
 ./venv/bin/pylint \

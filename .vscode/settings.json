@@ -1,4 +1,13 @@
 {
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestEnabled": true,
+    "python.testing.unittestArgs": [
+        "--verbose",
+        "--start-directory",
+        "./tests",
+        "--pattern",
+        "test*.py"
+    ],
     "python.formatting.provider": "black",
     "python.formatting.blackArgs": [
         "--config",
