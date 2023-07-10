@@ -10,9 +10,7 @@
                 "./venv/bin/python",
                 "-m",
                 "unittest",
-                "discover",
-                "--start-directory",
-                "./tests"
+                "discover"
             ],
             "problemMatcher": [],
             "presentation": {
